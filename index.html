@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo en tus uñas | Salón de Manicura y Pedicura en Algorta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .hero-gradient { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=2070&auto=format&fit=crop'); background-size: cover; background-position: center; }
+        .glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <nav class="fixed w-full z-50 glass border-b border-pink-100 py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="flex flex-col">
+            <span class="font-serif text-2xl text-pink-600 leading-none">Estilo en tus uñas</span>
+            <span class="text-[10px] uppercase tracking-[0.2em] text-slate-400">Manicura & Pedicura</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-xs uppercase tracking-widest font-semibold text-slate-600">
+            <a href="#servicios" class="hover:text-pink-600 transition">Servicios</a>
+            <a href="#galeria" class="hover:text-pink-600 transition">Galería</a>
+            <a href="#contacto" class="hover:text-pink-600 transition">Ubicación</a>
+        </div>
+        <a href="tel:+34944000000" class="bg-pink-600 text-white px-6 py-3 rounded-full text-xs font-bold uppercase tracking-tighter hover:bg-pink-700 transition shadow-lg shadow-pink-200">
+            Pedir Cita Ahora
+        </a>
+    </nav>
+
+    <section class="h-[90vh] hero-gradient flex items-center px-6 md:px-24">
+        <div class="max-w-2xl text-white">
+            <span class="uppercase tracking-[0.3em] text-sm mb-4 block animate-pulse">Bienvenida a tu momento</span>
+            <h2 class="font-serif text-6xl md:text-8xl mb-6 leading-tight">Diseño y Salud <br> <span class="italic font-normal">para tus uñas</span></h2>
+            <p class="text-lg mb-8 text-slate-100 max-w-lg leading-relaxed">
+                Especialistas en manicura, pedicura y nail art personalizado en el corazón de Algorta.
+            </p>
+            <div class="flex gap-4">
+                <a href="#servicios" class="bg-white text-pink-600 px-8 py-4 font-bold rounded-full hover:bg-pink-50 transition">Ver servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h3 class="font-serif text-4xl mb-4">Servicios Exclusivos</h3>
+            <div class="h-1 w-20 bg-pink-400 mx-auto"></div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-10">
+            <div class="bg-white p-10 rounded-3xl shadow-sm border border-pink-50 hover:shadow-xl transition-shadow group">
+                <div class="w-14 h-14 bg-pink-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-pink-600 transition-colors">
+                    <i data-lucide="sparkles" class="text-pink-600 group-hover:text-white"></i>
+                </div>
+                <h4 class="font-serif text-2xl mb-4 text-slate-800">Manicura Completa</h4>
+                <p class="text-slate-500 text-sm leading-relaxed mb-6">Tratamiento integral que incluye limado, cuidado de cutículas, masaje hidratante y esmaltado de larga duración.</p>
+                <span class="text-pink-600 font-bold">Desde 18€</span>
+            </div>
+            <div class="bg-white p-10 rounded-3xl shadow-sm border border-pink-50 hover:shadow-xl transition-shadow group">
+                <div class="w-14 h-14 bg-pink-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-pink-600 transition-colors">
+                    <i data-lucide="heart" class="text-pink-600 group-hover:text-white"></i>
+                </div>
+                <h4 class="font-serif text-2xl mb-4 text-slate-800">Pedicura Spa</h4>
+                <p class="text-slate-500 text-sm leading-relaxed mb-6">Relajación total para tus pies con exfoliación, eliminación de durezas y acabado perfecto.</p>
+                <span class="text-pink-600 font-bold">Desde 25€</span>
+            </div>
+            <div class="bg-white p-10 rounded-3xl shadow-sm border border-pink-50 hover:shadow-xl transition-shadow group">
+                <div class="w-14 h-14 bg-pink-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-pink-600 transition-colors">
+                    <i data-lucide="palette" class="text-pink-600 group-hover:text-white"></i>
+                </div>
+                <h4 class="font-serif text-2xl mb-4 text-slate-800">Nail Art & Gel</h4>
+                <p class="text-slate-500 text-sm leading-relaxed mb-6">Diseños personalizados a mano alzada y sistemas de gel para unas uñas impecables durante semanas.</p>
+                <span class="text-pink-600 font-bold">Consultar diseño</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="py-24 bg-pink-50 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="font-serif text-4xl text-center mb-16">Inspiración y Estilo</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=1000&auto=format&fit=crop" class="w-full h-80 object-cover rounded-2xl shadow-md hover:scale-[1.02] transition" alt="Nail Art">
+                <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=1000&auto=format&fit=crop" class="w-full h-80 object-cover rounded-2xl shadow-md hover:scale-[1.02] transition" alt="Salón de uñas">
+                <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=1000&auto=format&fit=crop" class="w-full h-80 object-cover rounded-2xl shadow-md hover:scale-[1.02] transition" alt="Manicura">
+                <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1000&auto=format&fit=crop" class="w-full h-80 object-cover rounded-2xl shadow-md hover:scale-[1.02] transition" alt="Esmaltes">
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto" class="bg-white py-24 px-6 border-t border-pink-100">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-16">
+            <div>
+                <h5 class="font-serif text-3xl text-pink-600 mb-8 uppercase tracking-widest">Estilo en tus uñas</h5>
+                <p class="flex items-start gap-4 mb-6 text-slate-600 font-medium">
+                    <i data-lucide="map-pin" class="text-pink-500 shrink-0"></i>
+                    Sarrikobaso Kalea, 5<br>48993 Algorta, Bizkaia
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 hover:bg-pink-600 hover:text-white transition"><i data-lucide="instagram" size="20"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 hover:bg-pink-600 hover:text-white transition"><i data-lucide="facebook" size="20"></i></a>
+                </div>
+            </div>
+            <div>
+                <h5 class="font-serif text-xl mb-8 border-b border-pink-200 pb-2 inline-block">Horario de Apertura</h5>
+                <div class="space-y-4 text-slate-600 text-sm">
+                    <p class="flex justify-between"><span>Lunes - Viernes:</span> <span class="font-bold">09:30 - 20:00</span></p>
+                    <p class="flex justify-between"><span>Sábado:</span> <span class="font-bold">09:30 - 14:00</span></p>
+                    <p class="flex justify-between text-pink-600"><span>Domingo:</span> <span class="font-bold uppercase">Cerrado</span></p>
+                </div>
+            </div>
+            <div class="bg-pink-50 p-8 rounded-3xl">
+                <h5 class="font-serif text-xl mb-4 text-pink-800 tracking-tight">Citas y Consultas</h5>
+                <p class="text-xs text-pink-700/70 mb-6 leading-relaxed">Te recomendamos reservar con antelación para asegurar tu hueco.</p>
+                <a href="tel:+34944000000" class="flex items-center gap-3 text-2xl font-bold text-pink-600 hover:underline">
+                    <i data-lucide="phone-call"></i> 944 00 00 00
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+      lucide.createIcons();
+    </script>
+</body>
+</html>
